@@ -5,6 +5,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+/* Start Section */
 section  {
     background-image: url(../image/blood.jpg);
 }
@@ -28,3 +29,4 @@ section .contanier h1 {
     border-radius: 10px;
     
 }
+/* End Section */
