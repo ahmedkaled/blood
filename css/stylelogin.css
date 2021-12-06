@@ -248,7 +248,7 @@ input {
 }
 input:placeholder-shown {
   text-align: left;
-  font-size: 15px;
+  font-size: 13px;
   color: white;
   width: 90%;
   padding-left: 10px;
