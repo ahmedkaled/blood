@@ -183,8 +183,8 @@ section .contanier .this-inputs h2 {
   top: 38px;
   right: -120px;
   width: 30%;
-  color: whitesmoke;
-  text-shadow: 1px 0px 2px black;
+  color: white;
+  text-shadow: 1px 0px 2px rgb(0, 0, 0);
   display: block;
   position: relative;
 }
@@ -198,7 +198,7 @@ form {
   position: relative;
   margin: 80px auto;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   form {
     min-width: 100%;
   }
@@ -208,20 +208,18 @@ form {
     top: 38px;
   }
 }
-@media (max-width:991px) {
-  form {
-    min-width: 50%;
-  }
+@media (max-width: 991px) {
+  
   form .this-inputs label {
     width: 40%;
     right: -65px;
     top: 38px;
   }
 }
-@media (min-width:992px) {
-form {
-  max-width: 55%;
-}
+@media (min-width: 992px) {
+  form {
+    max-width: 55%;
+  }
 }
 form .text {
   text-align: center;
@@ -232,17 +230,15 @@ form .text {
   color: red;
   padding: 15px;
   box-shadow: -1px 1px 1px white;
-  
 }
 form .this-inputs img {
   width: 80px;
   height: 80px;
-} 
+}
 form .this-inputs i {
   font-size: 70px;
   color: white;
   font-weight: 900;
-  
 }
 input {
   border: 1px solid white;
@@ -254,33 +250,42 @@ input {
   width: 90%;
   background-color: rgba(247, 247, 247, 0.479);
 }
-input:placeholder-shown {
+::placeholder {
   text-align: left;
-  color: white;
-  width: 90%;
-  padding-left: 10px;
+  color: rgba(12, 9, 9, 0.178);
+  /* width: 90%; */
+  /* padding-left: 10px; */
 }
-form a {
+form .links a {
   text-decoration: none;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   color: white;
   font-family: 700;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgba(255, 255, 255, 0.356);
   text-align: center;
 }
 .links {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.links a {
   width: 100%;
+  
 }
 .links .create {
   color: yellow;
+  background-color: darkslategrey;
 }
-a:hover {
+.links a:hover {
   color: red;
+  background-color: rgba(0, 0, 0, 0.438);
 }
 section .contanier .links span {
   text-align: center;
@@ -291,7 +296,6 @@ section .contanier .links span {
   z-index: 100;
   color: red;
 }
-
 
 /* End Section */
 
