@@ -172,7 +172,7 @@ section {
   /* position: relative; */
   width: 100%;
 }
-section .contanier .this-inputs h2 {
+section .contanier .text h2 {
   text-align: center;
   color: white;
   text-shadow: -1px 1px 3px black;
@@ -263,7 +263,8 @@ form .links a {
   border-radius: 5px;
   color: white;
   font-family: 700;
-  background-color: rgba(255, 255, 255, 0.356);
+  background-color:dodgerblue;
+  border-bottom: 1px solid black;
   text-align: center;
 }
 .links {
@@ -273,6 +274,7 @@ form .links a {
   flex-direction: row;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 20px;
   
 }
 .links a {
@@ -281,7 +283,7 @@ form .links a {
 }
 .links .create {
   color: yellow;
-  background-color: darkslategrey;
+  background-color: darkred;
 }
 .links a:hover {
   color: red;
