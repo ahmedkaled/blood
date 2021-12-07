@@ -172,6 +172,9 @@ section {
   /* position: relative; */
   width: 100%;
 }
+.this-inputs img {
+
+}
 section .contanier .text h2 {
   text-align: center;
   color: white;
@@ -214,7 +217,7 @@ form {
   }
   form .this-inputs label {
     width: 40%;
-    right: -65px;
+    right: -80px;
     top: 38px;
   }
 }
@@ -224,7 +227,7 @@ form {
   }
   form .this-inputs label {
     position: relative;
-    right: -150px;
+    right: -145px;
   }
 }
 form .text {
@@ -238,8 +241,8 @@ form .text {
   box-shadow: -1px 1px 1px white;
 }
 form .this-inputs img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 form .this-inputs i {
   font-size: 70px;
@@ -247,18 +250,19 @@ form .this-inputs i {
   font-weight: 900;
 }
 input {
-  border: 1px solid white;
+  border: 1px solid gainsboro;
   outline: none;
+  color: white;
   border-radius: 5px;
-  padding-right: 121px;
+  padding-right: 145px;
   padding-left: 10px;
   height: 40px;
   width: 90%;
-  background-color: rgba(247, 247, 247, 0.479);
+  background-color: rgba(0, 0, 0, 0.473);
 }
 ::placeholder {
   text-align: left;
-  color: rgba(12, 9, 9, 0.178);
+  color: rgba(255, 255, 255, 0.459);
   /* width: 90%; */
   /* padding-left: 10px; */
 }
