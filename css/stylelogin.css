@@ -209,7 +209,9 @@ form {
   }
 }
 @media (max-width: 991px) {
-  
+  form {
+    width: 50%;
+  }
   form .this-inputs label {
     width: 40%;
     right: -65px;
@@ -218,7 +220,11 @@ form {
 }
 @media (min-width: 992px) {
   form {
-    max-width: 55%;
+    width: 55%;
+  }
+  form .this-inputs label {
+    position: relative;
+    right: -150px;
   }
 }
 form .text {
