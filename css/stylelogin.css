@@ -184,7 +184,7 @@ section .contanier .text h2 {
   margin: 10px;
   position: relative;
   top: 38px;
-  right: -120px;
+  right: -150px;
   width: 30%;
   color: white;
   text-shadow: 1px 0px 2px rgb(0, 0, 0);
@@ -197,7 +197,7 @@ form {
   border-radius: 10px;
   background-color: #22191986;
   height: 100%;
-  width: 40%;
+  width: 50%;
   position: relative;
   margin: 80px auto;
 }
@@ -206,12 +206,20 @@ form {
     min-width: 100%;
   }
   form .this-inputs label {
-    width: 35%;
-    right: -73px;
+    width: 32%;
+    position: relative;
+    right: -80px;
     top: 38px;
   }
+  input {
+    padding-right: 400px;
+  }
+  ::placeholder {
+    width: 180px;
+    font-size: 13px;
+  }
 }
-@media (max-width: 991px) {
+@media (min-width:768px) and (max-width: 991px) {
   form {
     width: 50%;
   }
@@ -221,13 +229,14 @@ form {
     top: 38px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width:1199px) {
   form {
     width: 55%;
   }
   form .this-inputs label {
     position: relative;
     right: -145px;
+    height: 100%;
   }
 }
 form .text {
