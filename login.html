@@ -41,35 +41,24 @@
     </header>
     <section>
       <div class="contanier">
-        <form>
+        <form method="post" action="/login.php">
           <div class="text">
-            
-            <h2>تسجيل الدخول</h2>
-
+            <h2 >تسجيل الدخول</h2>
           </div>
           <div class="this-inputs">
-            <img src=".//image/blood-donor.png" alt="">
-            
-           <label> البريد الالكتروني</label>
-            <input
-              dir="ltr"
-              type="email"
-              required
-              placeholder="example@example.com"
-              title="ادخل البريد الالكتروني الخاص "
-            />
-            <label> الرقم السري </label>
-            <input
-              dir="ltr"
-              class="in"
-              type="password"
-              required
-              placeholder="password"
-              title="ادخل الباسورد الخاص بك"
-            />
+            <img src=".//image/blood-donor.png" alt="" />
+
+            <label for="email"> البريد الالكتروني</label>
+            <input dir="ltr"  type="email" id="email" name="email" required placeholder="example@example.com"
+              title="ادخل البريد الالكتروني الخاص " />
+            <label for="password"> الرقم السري </label>
+            <input dir="ltr"  id="password" type="password" name="password" required placeholder="password"
+              title="ادخل الباسورد الخاص بك" />
           </div>
           <div class="links">
-           <div class="log"> <input type="submit" value="تسجيل الدخول"  title="تسجيل دخول الان للتبرع"></div>
+            <div class="log">
+              <input type="submit" value="تسجيل الدخول" title="تسجيل دخول الان للتبرع" name="" />
+            </div>
             <span>او</span>
             <a class="create" href="#">انشاء حساب جديد</a>
           </div>
