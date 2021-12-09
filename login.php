@@ -2,7 +2,7 @@
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$con = new mysqli("ttps://ahmedkaled.github.io/mysql/","root","","mis");
+$con = new mysqli("https://ahmedkaled.github.io/mysql/","root","","mis");
 if ($con->connect_error) {
     die("Faild to connect : ".$con->connect_error);
 } else {
