@@ -197,7 +197,8 @@ form {
   height: 100%;
   width: 50%;
   position: relative;
-  margin: 80px auto;
+  margin: 0 auto;
+  margin-top: 140px;
 }
 @media (max-width: 767px) {
   form {
@@ -250,6 +251,10 @@ form .text {
 form .this-inputs img {
   width: 100px;
   height: 100px;
+  position: absolute;
+  top: -70px;
+ 
+
 }
 form .this-inputs i {
   font-size: 70px;
