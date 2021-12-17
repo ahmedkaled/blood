@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=".//css/stylelogin.css" />
+    <link rel="stylesheet" href=".//css/stylesign-up.css">
     <link rel="stylesheet" href=".//css/normalize.css" />
     <link rel="stylesheet" href=".//css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,6 @@
     />
     <title>بنك الدم</title>
   </head>
-
   <body dir="rtl">
     <header>
       <div class="contanier">
@@ -29,7 +28,9 @@
               <i class="fas fa-home"></i
               ><a href="index.html">الصفحة الرئيسية</a>
             </li>
-            <li><i class="fas fa-user"></i> <a href="login.html">تسجيل الدخول</a></li>
+            <li>
+              <i class="fas fa-user"></i> <a href="login.html">تسجيل الدخول</a>
+            </li>
             <li><i class="fas fa-bell"></i><a href="#">فوائد التبرع</a></li>
             <li>
               <i class="fas fa-info-circle"></i
@@ -41,26 +42,37 @@
     </header>
     <section>
       <div class="contanier">
-        <form method="post" action="/login.php">
+          
+        <form method="post" action="../sign-up.php">
           <div class="text">
-            <h2 >تسجيل الدخول</h2>
+            <h2>انشاء حساب</h2>
           </div>
           <div class="this-inputs">
             <img src=".//image/blood-donor.png" alt="" />
-
-            <label for="email"> البريد الالكتروني</label>
-            <input dir="ltr"  type="email" id="email" name="email" required placeholder="example@example.com"
-              title="ادخل البريد الالكتروني الخاص " />
-            <label for="pass"> الرقم السري </label>
-            <input dir="ltr"  id="pass" type="password" name="pass" required placeholder="password"
-              title="ادخل الباسورد الخاص بك" />
+            <label for="firstname">الاسم الاول</label>
+            <input dir="ltr" id="firstname" type="text" name="firstname" required placeholder="ادخل الاسم الاول">
+            <label for="lastname"> الاسم الاخير </label>
+            <input dir="ltr" id="lastname" type="text" name="lastname" required placeholder="ادخل الاسم الاخير">
+            <label for="email">البريد الالكتروني</label>
+            <input dir="ltr" id="email" type="email" name="email" required maxlength="70" placeholder="example@example.com">
+            <label for="phone">رقم الهاتف</label>
+            <input dir="ltr" id="phone" type="tel" name="phone" required maxlength="11" placeholder="+20">
+            <label for="date">تاريخ الميلاد</label>
+            <input  id="date" type="date" min="1969-01-01" max="2001-01-01" name="date"  required >
+            <label for="pass">الرقم السري</label>
+            <input dir="ltr" id="pass" type="password" name="pass" required placeholder="********">
+            
           </div>
           <div class="links">
             <div class="log">
-              <input type="submit" value="تسجيل الدخول" title="تسجيل دخول الان للتبرع" name="" />
+              <input
+                type="submit"
+                value="انشاء الحساب"
+                title="تسجيل دخول الان للتبرع"
+                name=""
+              />
+
             </div>
-            <span>او</span>
-            <a class="create" href="./sign-up.html">انشاء حساب جديد</a>
           </div>
         </form>
       </div>
