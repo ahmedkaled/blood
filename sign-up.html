@@ -19,7 +19,8 @@
     <header>
       <div class="contanier">
         <div class="logo">
-          <img src="./image/Blood-Donation-Background-PNG.png" alt="" />
+          <img src="./image/Blood-Donation-Background-PNG.png" alt="logo" />
+          <p>بنك الدم</p>
         </div>
         <nav>
           <div class="bar"><i class="fas fa-bars"></i></div>
@@ -43,24 +44,24 @@
     <section>
       <div class="contanier">
           
-        <form method="post" action="../sign-up.php">
+        <form id="myform" method="post" action="../sign-up.php">
           <div class="text">
             <h2>انشاء حساب</h2>
           </div>
           <div class="this-inputs">
             <img src=".//image/blood-donor.png" alt="" />
             <label for="firstname">الاسم الاول</label>
-            <input dir="ltr" id="firstname" type="text" name="firstname" required placeholder="ادخل الاسم الاول">
+            <input  dir="ltr" id="firstname" type="text" name="firstname" maxlength="50" required placeholder="ادخل الاسم الاول">
             <label for="lastname"> الاسم الاخير </label>
-            <input dir="ltr" id="lastname" type="text" name="lastname" required placeholder="ادخل الاسم الاخير">
-            <label for="email">البريد الالكتروني</label>
-            <input dir="ltr" id="email" type="email" name="email" required maxlength="70" placeholder="example@example.com">
+            <input  dir="ltr" id="lastname" type="text" name="lastname" maxlength="80" required placeholder="ادخل الاسم الاخير">
+            <label for="email" > البريد الالكتروني</label>
+            <input  dir="ltr"  id="email" type="email" name="email" required maxlength="30" placeholder="example@example.com">
             <label for="phone">رقم الهاتف</label>
-            <input dir="ltr" id="phone" type="tel" name="phone" required maxlength="11" placeholder="+20">
+            <input  dir="ltr" id="phone" type="tel" name="phone" required maxlength="11" placeholder="رقم الهاتف المكون من 11 رقم">
             <label for="date">تاريخ الميلاد</label>
             <input  id="date" type="date" min="1969-01-01" max="2001-01-01" name="date"  required >
             <label for="pass">الرقم السري</label>
-            <input dir="ltr" id="pass" type="password" name="pass" required placeholder="********">
+            <input  dir="ltr" id="pass" type="password" name="pass" required placeholder="********">
             
           </div>
           <div class="links">
@@ -71,6 +72,7 @@
                 title="تسجيل دخول الان للتبرع"
                 name=""
               />
+              <input type="reset" value="مسح البيانات" >
 
             </div>
           </div>
@@ -88,5 +90,20 @@
         <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
     </footer>
+
+    <script>
+      var x = document.getElementsById("myForm");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  document.getElementsByTagName("INPUT").style.backgroundColor = "yellow";  
+}
+
+function myBlurFunction() {
+  document.getElementsByTagName("INPUT").style.backgroundColor = "";  
+}  
+
+</script>
   </body>
 </html>

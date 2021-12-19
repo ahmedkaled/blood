@@ -60,10 +60,23 @@ header .contanier {
 }
 header .logo {
   top: 0;
-  width: 120px;
-  height: 110px;
+  width: 100px;
+  height: 90px;
   position: absolute;
-  left: 40px;
+  left: 50px;
+  border: 1px solid gray;
+  box-shadow: 0px 1px 6px 0px #181111c9 inset, 1px 3px 6px 0px white inset;
+  padding: 5px;
+  border-radius: 50%;
+  border-bottom: transparent;
+}
+header .logo p {
+  text-align: center;
+  color: yellow;
+  background-color: brown;
+  margin: -13px;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
 header .logo img {
   width: 100%;
@@ -181,7 +194,7 @@ section .contanier .text h2 {
 .this-inputs label {
   margin: 10px;
   position: relative;
-  top: 38px;
+  /* top: 38px; */
   right: -150px;
   width: 30%;
   color: white;
@@ -192,7 +205,7 @@ section .contanier .text h2 {
 
 form {
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #22191986;
   height: 100%;
   width: 50%;
@@ -308,6 +321,7 @@ form .links a {
 .links .create {
   color: white;
   background-color:darkred;
+  border-radius: 0;
   padding: 10px;
   width: 100%;
 }

@@ -59,10 +59,23 @@ header .contanier {
 }
 header .logo {
   top: 0;
-  width: 120px;
-  height: 110px;
+  width: 100px;
+  height: 90px;
   position: absolute;
-  left: 40px;
+  left: 50px;
+  border: 1px solid gray;
+  box-shadow: 0px 1px 6px 0px #181111c9 inset, 1px 3px 6px 0px white inset;
+  padding: 5px;
+  border-radius: 50%;
+  border-bottom: transparent;
+}
+header .logo p {
+  text-align: center;
+  color: yellow;
+  background-color: brown;
+  margin: -13px;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
 header .logo img {
   width: 100%;
