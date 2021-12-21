@@ -176,6 +176,13 @@
     justify-content: center;
     align-items: center;
   }
+  section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+  }
   .this-inputs {
     display: flex;
     justify-content: center;
@@ -195,8 +202,8 @@
     margin: 10px;
     position: relative;
     /* top: 38px; */
-    right: -180px;
-    width: 20%;
+    right: -130px;
+    width: 30%;
     color: white;
     text-shadow: 1px 0px 2px rgb(0, 0, 0);
     display: block;
@@ -208,10 +215,11 @@
     border-radius: 10px;
     background-color: #22191986;
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: relative;
     margin: 0 auto;
     margin-top: 140px;
+    z-index: 100;
   }
   @media (max-width: 767px) {
     form {
@@ -319,28 +327,13 @@
     color: white;
   }
   
-  .links .create {
-    color: white;
-    background-color:darkred;
-    padding: 10px;
-    width: 100%;
-  }
+  
   .links a:hover,
   .links input:hover {
     color: red;
     background-color: rgba(0, 0, 0, 0.438);
   }
-  section .contanier .links span {
-    text-align: center;
-    position: relative;
-    font-size: 13px;
-    margin: 10px;
-    top: 0px;
-    color: white;
-    background-color: transparent;
-    z-index: 100;
-    color: yellow;
-  }
+ 
   
   /* End Section */
   
