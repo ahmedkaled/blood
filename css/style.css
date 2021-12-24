@@ -243,8 +243,12 @@ section .link {
   justify-content: center;
   align-items: center;
   position: relative;
+  bottom: 5px;
+  z-index: 15;
+  transition: all 1s;
 }
-section .link a {
+
+section #link a {
   color: white;
   text-decoration: none;
   border: 1px solid white;
@@ -257,14 +261,15 @@ section .link a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 8;
 }
-section .link a i {
+section #link a i {
   margin-right: 10px;
   font-size: 25px;
 }
-section .link a:hover {
+section #link a:hover {
   color: red;
 }
 section .box {
+  /* display: none; */
   border-radius: 15px;
   width: fit-content;
   margin: 20px auto;

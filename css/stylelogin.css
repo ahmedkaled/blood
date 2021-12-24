@@ -114,6 +114,7 @@ header nav ul li {
     background-color: rgba(0, 0, 0, 0.63);
     padding: 0 5px 5px 25px;
     border-radius: 10px;
+    
   }
 }
 header nav ul li a {
@@ -192,7 +193,7 @@ section::after {
   align-items: center;
   flex-direction: column;
   margin: 17px 0;
-  /* position: relative; */
+  position: relative;
   width: 100%;
 }
 
@@ -204,13 +205,14 @@ section .contanier .text h2 {
 .this-inputs label {
   margin: 10px;
   position: relative;
-  /* top: 38px; */
-  right: -150px;
+  /* top: 12px; */
+  right: -167px;
   width: 30%;
   color: white;
   text-shadow: 1px 0px 2px rgb(0, 0, 0);
   display: block;
   position: relative;
+  
 }
 
 form {
@@ -222,7 +224,7 @@ form {
   position: relative;
   margin: 0 auto;
   margin-top: 140px;
-  z-index: 100;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   form {
@@ -231,8 +233,12 @@ form {
   form .this-inputs label {
     width: 32%;
     position: relative;
-    right: -80px;
+    right: -87px;
     /* top: 38px; */
+  }
+  form .this-inputs i {
+    margin-right: 195px;
+   
   }
   input {
     padding-right: 400px;
@@ -251,6 +257,10 @@ form {
     right: -80px;
     /* top: 38px; */
   }
+  form .this-inputs i {
+    margin-right: 180px;
+   
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   form {
@@ -260,6 +270,9 @@ form {
     position: relative;
     right: -145px;
     height: 100%;
+  }
+  form .this-inputs i {
+    margin-right: 39px;
   }
 }
 form .text {
@@ -276,14 +289,17 @@ form .this-inputs img {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: -70px;
+  top: -160px;
  
 
 }
 form .this-inputs i {
-  font-size: 70px;
+  font-size: 25px;
   color: white;
-  font-weight: 900;
+  position: relative;
+  right: -220px;
+  top: -32px;
+  
 }
 .this-inputs input {
   border: 1px solid gainsboro;
@@ -362,13 +378,13 @@ footer {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  background: #2c3e50;
+  background: firebrick;
   height: 9vh;
 }
 
 footer p {
   font-size: 14px;
-  padding: 14px 10px;
+  padding-bottom: 20px;
   color: white;
 }
 footer .icon {
@@ -376,7 +392,8 @@ footer .icon {
   flex-direction: row;
 }
 footer .icon i {
-  padding: 5px 5px 12px;
+  padding-bottom: 18px;
+  margin-right: 10px;
   color: white;
   font-size: 20px;
 }
