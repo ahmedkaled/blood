@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".//css/stylelogin.css" />
+    <link rel="stylesheet" href=".//css/normalize.css" />
+    <link rel="stylesheet" href=".//css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>بنك الدم</title>
+  </head>
+
+  <body dir="rtl">
+    <header>
+      <div class="contanier">
+        <div class="logo">
+          <img src="./image/Blood-Donation-Background-PNG.png"  alt="" />
+          <p>بنك الدم</p>
+        </div>
+        <nav>
+          <div class="bar"><i class="fas fa-bars"></i></div>
+          <ul>
+            <li>
+              <i class="fas fa-home"></i
+              ><a href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li><i class="fas fa-user"></i> <a href="login.html">تسجيل الدخول</a></li>
+            <li><i class="fas fa-bell"></i><a href="#">فوائد التبرع</a></li>
+            <li>
+              <i class="fas fa-info-circle"></i
+              ><a href="blood.html">نبذة عن الموقع</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="contanier">
+        <form method="post" action="/login.php">
+          <div class="text">
+            <h2 >تسجيل الدخول</h2>
+          </div>
+          <div class="this-inputs">
+            <img src=".//image/blood-donor.png" alt="" />
+
+            <label for="email"> البريد الالكتروني</label> 
+            <input dir="ltr"  type="email" id="email" name="email" required placeholder="example@example.com"
+              title="ادخل البريد الالكتروني الخاص " /><i class="fas fa-user"></i>
+            <label for="pass"> الرقم السري </label>
+            <input dir="ltr"  id="pass" type="password" name="pass" required placeholder="password"
+              title="ادخل الباسورد الخاص بك" /> <i class="fas fa-lock"></i>
+          </div>
+          <div class="links">
+            <div class="log">
+              <input type="submit" value="تسجيل الدخول" title="تسجيل دخول الان للتبرع" name="" />
+            </div>
+            <span>او</span>
+            <a class="create" href="./sign-up.html">انشاء حساب جديد</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;حقوق الملكية محفوظة "احمد خالد"</p>
+      <div class="icon">
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/a7medkhaled2021"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
