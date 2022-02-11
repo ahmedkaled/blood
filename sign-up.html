@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=".//css/stylesign-up.css">
+    <link rel="stylesheet" href=".//css/stylesign-up.css" />
     <link rel="stylesheet" href=".//css/normalize.css" />
     <link rel="stylesheet" href=".//css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
     <title>بنك الدم</title>
   </head>
   <body dir="rtl">
-    <header>
+    <!-- <header>
       <div class="contanier">
         <div class="logo">
           <img src="./image/Blood-Donation-Background-PNG.png" alt="logo" />
@@ -40,47 +40,112 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
     <section>
       <div class="contanier">
-          
-        <form id="myform" method="post" action="../sign-up.php">
-          <div class="text">
-            <h2>انشاء حساب</h2>
-          </div>
-          <div class="this-inputs">
-            <img src=".//image/blood-donor.png" alt="" />
-            <label for="firstname">الاسم الاول</label>
-            <input  dir="ltr" id="firstname" type="text" name="firstname" maxlength="50" required placeholder="ادخل الاسم الاول">
-            <label for="lastname"> الاسم الاخير </label>
-            <input  dir="ltr" id="lastname" type="text" name="lastname" maxlength="80" required placeholder="ادخل الاسم الاخير">
-            <label for="email" > البريد الالكتروني</label>
-            <input  dir="ltr"  id="email" type="email" name="email" required maxlength="30" placeholder="example@example.com">
-            <label for="phone">رقم الهاتف</label>
-            <input  dir="ltr" id="phone" type="tel" name="phone" required maxlength="11" placeholder="رقم الهاتف المكون من 11 رقم">
-            <label for="date">تاريخ الميلاد</label>
-            <input  id="date" type="date" min="1969-01-01" max="2001-01-01" name="date"  required >
-            <label for="pass">الرقم السري</label>
-            <input  dir="ltr" id="pass" type="password" name="pass" required placeholder="********">
-            
-          </div>
-          <div class="links">
-            <div class="log">
+        <div class="box-big">
+          <form
+            class="box-one"
+            id="myform"
+            method="post"
+            action="../sign-up.php"
+          >
+            <div class="text">
+              <div class="icon"><i class="fa-solid fa-user"></i></div>
+              <p>انشاء حساب</p>
+            </div>
+            <div class="this-inputs">
+              <!-- <img src=".//image/blood-donor.png" alt="" /> -->
+              <!-- <label for="firstname">الاسم الاول</label> -->
               <input
+                dir="ltr"
+                id="firstname"
+                type="text"
+                name="firstname"
+                maxlength="50"
+                required
+                placeholder=" الاسم الاول"
+              />
+              <!-- <label for="lastname"> الاسم الاخير </label> -->
+              <input
+                dir="ltr"
+                id="lastname"
+                type="text"
+                name="lastname"
+                maxlength="80"
+                required
+                placeholder=" اسم العائلة"
+              />
+              <!-- <label for="email" > البريد الالكتروني</label> -->
+              <input
+                dir="ltr"
+                id="email"
+                type="email"
+                name="email"
+                required
+                maxlength="30"
+                placeholder="البريد الايكتروني "
+              />
+              <!-- <label for="phone">رقم الهاتف</label> -->
+              <input
+                dir="ltr"
+                id="phone"
+                type="tel"
+                name="phone"
+                required
+                maxlength="11"
+                placeholder="رقم الهاتف "
+              />
+              <!-- <label for="date">تاريخ الميلاد</label> -->
+              <input
+                id="date"
+                type="date"
+                min="1969-01-01"
+                max="2001-01-01"
+                name="date"
+                required
+              />
+              <!-- <label for="pass">الرقم السري</label> -->
+              <input
+                dir="ltr"
+                id="pass"
+                type="password"
+                name="pass"
+                required
+                placeholder="الرقم السري"
+              />
+            </div>
+            <div class="links">
+              <button
                 type="submit"
                 value="انشاء الحساب"
                 title="تسجيل دخول الان للتبرع"
                 name=""
-              />
-              <input type="reset" value="مسح البيانات" >
-
+              >
+                انشاء الحساب
+              </button>
+              <button type="reset" value="">مسح البيانات</button>
             </div>
+            <a href="index.html">العودة للصفحة الرئيسية </a>
+          </form>
+
+          <div class="box-two">
+            <img class="one" src=".//logo.png" alt="" />
+            <!-- <img class="two" src=".//doctor.svg" alt=""> -->
+            <!-- <div class="info">
+              <p>
+                التبرع بالدم: هو إجراء طبي تطوعي يتم بنقل الدم أو أحد مركباته من
+                شخص سليم معافى إلى شخص مريض يحتاج للدم. وهذا الإجراء يحتاج إليه
+                الملايين من الناس كل عام؛ فيستخدم أثناء الجراحة أو الحوادث أو
+                بعض الأمراض التي تتطلب نقل بعض مكونات الدم.
+              </p>
+            </div> -->
           </div>
-        </form>
+        </div>
       </div>
     </section>
 
-    <footer>
+    <!-- <footer>
       <p>&copy;حقوق الملكية محفوظة "احمد خالد"</p>
       <div class="icon">
         <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
@@ -89,21 +154,20 @@
         ></a>
         <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
-    </footer>
+    </footer> -->
 
     <script>
       var x = document.getElementsById("myForm");
-x.addEventListener("focus", myFocusFunction, true);
-x.addEventListener("blur", myBlurFunction, true);
+      x.addEventListener("focus", myFocusFunction, true);
+      x.addEventListener("blur", myBlurFunction, true);
 
-function myFocusFunction() {
-  document.getElementsByTagName("INPUT").style.backgroundColor = "yellow";  
-}
+      function myFocusFunction() {
+        document.getElementsByTagName("INPUT").style.backgroundColor = "yellow";
+      }
 
-function myBlurFunction() {
-  document.getElementsByTagName("INPUT").style.backgroundColor = "";  
-}  
-
-</script>
+      function myBlurFunction() {
+        document.getElementsByTagName("INPUT").style.backgroundColor = "";
+      }
+    </script>
   </body>
 </html>
