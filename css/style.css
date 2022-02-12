@@ -240,6 +240,11 @@ section .arow {
  z-index: 222;
  transform: translate(-50%,-50%);
 }
+@media (max-width: 768px) {
+  section .arow {
+    bottom: 55px;
+  }
+}
 section .arow span {
   display: block;
   position: relative;
