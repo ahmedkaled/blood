@@ -154,7 +154,8 @@ header nav .bar {
 }
 
 /* End header */
-/* Start Section */
+
+/* Start Section one */
 section {
   width: 100%;
   background-image: url(../image/newback.jpg);
@@ -246,7 +247,7 @@ section .arow span {
   position: relative;
   width: 30px;
   height: 30px;
-  z-index: 20000;
+  z-index: 200;
   border-bottom: 5px solid white;
   border-right: 5px solid white;
   transform: rotate(45deg);
@@ -329,6 +330,7 @@ section .arow span:nth-child(3) {
 @media (max-width: 767px) {
   .section-2 .box {
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 
@@ -387,6 +389,47 @@ section .arow span:nth-child(3) {
 @media (min-width: 991px) {
   .section-2 .box video {
     max-width: 50%;
+  }
+}
+
+.section-2 .contanier .up {
+  position: absolute;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  bottom: -85%;
+  border-radius: 5px;
+  z-index: 200;
+  background-color: white;
+  transform: translate(-50%, 50%);
+  
+}
+.section-2 .contanier .up span {
+  width: 50%;
+  height: 50%;
+  display: block;
+  position: relative;
+  margin: 18px auto;
+  border-bottom: 5px solid red;
+  border-right: 5px solid red;
+  border-radius: 4PX;
+  transform: rotate(-135deg);
+  animation: arrow 1s infinite;
+}
+@keyframes arrow {
+  0% {
+    opacity: 0.5;
+    animation-delay: 0.2s;
+  }
+
+  50% {
+    opacity: 0.1;
+    animation-delay: 0.2s;
+  }
+
+  100% {
+    opacity: 1;
+    animation-delay: 0.2s;
   }
 }
 /* End Section */
