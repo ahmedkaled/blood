@@ -279,7 +279,7 @@ section .arow span:nth-child(3) {
 .section-2 {
   background-color: rgb(82, 8, 8);
   padding-top: 30px;
-  height: 95vh;
+  /* height: 95vh; */
   border-top: 1px solid white;
 }
 .section-2 .link {
