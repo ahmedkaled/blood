@@ -159,7 +159,7 @@ header nav .bar {
 section {
   width: 100%;
   background-image: url(../image/newback.jpg);
-  background-color: white;
+  /* background-color: white; */
   min-height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
