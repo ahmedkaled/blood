@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href=".//image/logo.png">
     <link rel="stylesheet" href=".//css/style.css" />
     <link rel="stylesheet" href=".//css/normalize.css" />
     <link rel="stylesheet" href=".//css/all.css" />
@@ -43,19 +44,25 @@
     <section>
       <div class="contanier">
         <div class="text">
+          <!-- <h2 class="frame-1">مرحبا بكم</h2>
+          <h2 class="frame-2">في بنك الدم  </h2>
+          <h2 class="frame-3">تبرع الان </h2>
+          <h2 class="frame-4"></h2> -->
           <h1>
-            بنك الدم <br />
+            <span>مرحبا بكم في بنك الدم</span>
+          </h1>
+          <h2>
             <span
               class="txt-type"
               data-wait="3000"
-              data-words='["مرحبا بكم في بنك الدم"," تبرع الان","وانقذ حياة انسان"]'
+              data-words='[" تبرع الان", "وانقذ حياة انسان"]'
             ></span>
-          </h1>
-          <p>
+          </h2>
+          <!-- <p>
             عملية التبرع بالدم هتاخد من وقتك ١٥ دقيقة بس؟ اتبرع وساعد في إنقاذ
             حياة المرضى المحتاجين وماتنساش ان تبرعك بالدم هيخلي العالم ينبض
             بالحياة❤️...
-          </p>
+          </p> -->
         </div>
         <a href="#section-2">
           <div class="arow">
@@ -128,7 +135,7 @@
 
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-        let typeSpeed = 200;
+        let typeSpeed = 250;
 
         if (this.isDeleting) {
           typeSpeed /= 0;
