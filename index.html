@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <link rel="icon" type="image/x-icon" href=".//image/logo.png">
     <link rel="stylesheet" href=".//css/style.css" />
     <link rel="stylesheet" href=".//css/normalize.css" />
@@ -64,7 +65,7 @@
             بالحياة❤️...
           </p> -->
         </div>
-        <a href="#section-2">
+        <a href="#section-3">
           <div class="arow">
             <span></span>
             <span></span>
@@ -72,8 +73,19 @@
           </div>
         </a>
       </div>
+
     </section>
-    <div id="section-2" class="section-2">
+    <div class="section-2">
+      <div class="contanier">
+        <div class="ball">
+          <span></span>
+        </div>
+        <div class="info">
+          <p>تستمر الحياة بالعطاء المستمر</p>
+        </div>
+      </div>
+    </div>
+    <div id="section-3" class="section-3">
       <div class="contanier">
         <div class="box">
           <ul>
@@ -95,12 +107,13 @@
           <a href="login.html"> اتبرع الان <i class="fas fa-burn"></i></a>
         </div>
         <a href="#head" >
-        <div class="up">
+        <div class="up show">
           <span></span>
         </div>
       </a>
       </div>
     </div>
+   
     <footer>
       <p>&copy;حقوق الملكية محفوظة "احمد خالد"</p>
       <div class="icon">
@@ -111,54 +124,6 @@
         <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
     </footer>
-    <script>
-      //------Start code text view -----//
-      const TypeWriter = function (txtElement, words, wait = 10) {
-        this.txtElement = txtElement;
-        this.words = words;
-        this.txt = "";
-        this.wordIndex = 0;
-        this.wait = parseInt(wait, 10);
-        this.type();
-        this.isDeleting = false;
-      };
-      TypeWriter.prototype.type = function () {
-        const current = this.wordIndex % this.words.length;
-
-        const fullTxt = this.words[current];
-
-        if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-        let typeSpeed = 250;
-
-        if (this.isDeleting) {
-          typeSpeed /= 0;
-        }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-          typeSpeed = this.wait;
-
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === "") {
-          this.isDeleting = false;
-          this.wordIndex++;
-          typeSpeed = 500;
-        }
-        setTimeout(() => this.type(), typeSpeed);
-      };
-      document.addEventListener("DOMContentLoaded", init);
-      function init() {
-        const txtElement = document.querySelector(".txt-type");
-        const words = JSON.parse(txtElement.getAttribute("data-words"));
-        const wait = txtElement.getAttribute("data-wait");
-        new TypeWriter(txtElement, words, wait);
-      }
-    </script>
+    <script src="./JS.js"></script>
   </body>
 </html>
