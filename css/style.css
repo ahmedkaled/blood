@@ -160,7 +160,7 @@ header nav .bar {
 /* Start Section one */
 section {
   width: 100%;
-  background-image: url(../image/newback.jpg);
+  background-image: url(../image/newback.jpg); 
   background-color: darkred;
   min-height: 100vh;
   padding-top: 60px;
@@ -180,7 +180,15 @@ section {
   }
 }
 
-section::before {
+ /* section img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  
+}  */
+/* section::before {
   content: "";
   left: 0;
   top: 0;
@@ -189,7 +197,7 @@ section::before {
   width: 100%;
   height: 100%;
   position: absolute;
-}
+} */
 
 section .text {
   margin-top: 40px;
@@ -402,7 +410,7 @@ section .arow span:nth-child(3) {
 
 /* Start Section three */
 .section-3 {
-  background-color: darkred;
+  background-color: #8b0000;
   background-size: cover;
   /* background-image: url(../image/dust_texture.svg); */
   padding-top: 40px;
@@ -412,7 +420,7 @@ section .arow span:nth-child(3) {
   /* border-top: 1px solid white; */
   position: relative;
 }
-.section-3::after {
+/* .section-3::after {
   content: "";
   left: 0;
   top: 0;
@@ -420,8 +428,8 @@ section .arow span:nth-child(3) {
   width: 100%;
   height: 100%;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.425);
-}
+  background-color: rgba(141, 131, 131, 0.425);
+} */
 .section-3 .link {
   display: flex;
   justify-content: center;
