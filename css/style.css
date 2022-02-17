@@ -246,7 +246,8 @@ section .text h1 span {
 }
 @media (max-width:466px) {
   section .text h1 span {
-   font:700 1em/1 "Oswald", sans-serif;
+   font:700 1em/1 "cairo";
+   line-height: 1.5;
   }
 }
 section .text h2 {
@@ -257,6 +258,11 @@ section .text h2 {
   z-index: 5;
   padding: -20px;
   width: 100%;
+}
+@media (max-width:466px) {
+  section .text h2 {
+   font-size: 20px;
+  }
 }
 section .text p {
   width: 50%;
