@@ -253,7 +253,7 @@ section .text h1 span {
 }
 @media (max-width: 466px) {
   section .text h1 span {
-    font: 700 35px/1 "Oswald", sans-serif;
+    font: 700 60px "Oswald", sans-serif;
     line-height: 1.5;
   }
 }
