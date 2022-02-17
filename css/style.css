@@ -244,6 +244,11 @@ section .text h1 span {
     background-position: 100% 50%;
   }
 }
+@media (max-width:466px) {
+  section .text h1 span {
+   font:700 1em/1 "Oswald", sans-serif;
+  }
+}
 section .text h2 {
   color: white;
   line-height: 1.8;
