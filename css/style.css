@@ -165,15 +165,19 @@ section {
   min-height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-size:cover;
- background-repeat: no-repeat;
- background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
   border-bottom: 5px double firebrick;
-  /* background-attachment: fixed; */
+
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 767px) {
+  section {
+    background-attachment: scroll;
+  }
 }
 
 section::before {
@@ -235,7 +239,7 @@ section .text h1 span {
   animation: aitf 80s linear infinite;
   /* Activate hardware acceleration for smoother animations */
 
-  -webkit-transform: translate3d(0.0);
+  -webkit-transform: translate3d(0);
   -webkit-backface-visibility: hidden;
 }
 @-webkit-keyframes aitf {
@@ -246,10 +250,10 @@ section .text h1 span {
     background-position: 100% 50%;
   }
 }
-@media (max-width:466px) {
+@media (max-width: 466px) {
   section .text h1 span {
-   font:700 1em/1 "Oswald", sans-serif;
-   line-height: 1.5;
+    font: 700 1em/1 "Oswald", sans-serif;
+    line-height: 1.5;
   }
 }
 section .text h2 {
@@ -261,9 +265,9 @@ section .text h2 {
   padding: -20px;
   width: 100%;
 }
-@media (max-width:466px) {
+@media (max-width: 466px) {
   section .text h2 {
-   font-size: 20px;
+    font-size: 20px;
   }
 }
 section .text p {
@@ -387,7 +391,7 @@ section .arow span:nth-child(3) {
     right: 14px;
   }
 }
-.section-2 .contanier .info  p{
+.section-2 .contanier .info p {
   /* margin: 15px; */
   text-align: center;
   padding: 15px 0;
