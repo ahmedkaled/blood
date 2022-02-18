@@ -63,17 +63,18 @@ section {
 .box-big {
   border-radius:15px;
   /* height: 100%; */
-  margin: 15px auto;
+  margin: 15px;
   background-color: #fffdfd;
   display: flex;
   /* flex-wrap: nowrap; */
   justify-content: center;
   box-shadow: 1px 1px 5px 1px rgb(53, 49, 49);
 }
-@media (max-width:767px) {
-  .box-big {
-    margin: 0;
-    padding: 40px 0;
+@media (max-width:667px) {
+  section {
+   display: grid;
+   justify-content: center;
+   align-items: center;
   }
 }
 .box-big .box-one {
@@ -119,6 +120,7 @@ section {
       display: none;
     }
   }
+ 
   .box-big .box-two::after {
     content: "";
     position: absolute;
@@ -139,6 +141,14 @@ section {
    position: relative;
    margin: 15px 70px;
    z-index: 100;
+  }
+  @media (max-width:991px) {
+    .box-big .box-two img {
+      margin: 101px 54px;
+    }
+    /* .this-inputs input {
+      width: 89%;
+    } */
   }
  form {
 
@@ -199,9 +209,15 @@ form .this-inputs img {
   margin-top: 10px;
   background-color: transparent;     
 }
+@media (max-width:991px) {
+  
+  .this-inputs input {
+    width: 89%;
+  }
+}
 @media (max-width:767px) {
   .box-big .box-one .this-inputs input {
-    width: 75%;
+    width: 60%;
   }
 }
 .this-inputs .box-rem  {
@@ -213,6 +229,7 @@ form .this-inputs img {
   width: 63%;
   font-size: 13px;
 }
+
 .this-inputs .box-rem .check {
   width: 30px;
 }
@@ -221,7 +238,7 @@ form .this-inputs img {
  .this-inputs .box-rem {
  width:60px;
  position: relative;
- right: -34%;
+ right: -27%;
 
   }
 }
