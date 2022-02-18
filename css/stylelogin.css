@@ -217,7 +217,7 @@ form .this-inputs img {
 }
 @media (max-width:767px) {
   .box-big .box-one .this-inputs input {
-    width: 60%;
+    width: 80%;
   }
 }
 .this-inputs .box-rem  {
@@ -233,12 +233,17 @@ form .this-inputs img {
 .this-inputs .box-rem .check {
   width: 30px;
 }
-
+@media (max-width:991px) {
+  .this-inputs .box-rem {
+    position: relative;
+    right: -15%;
+  }
+}
 @media (max-width:767px) {
  .this-inputs .box-rem {
  width:60px;
  position: relative;
- right: -27%;
+ right: -35%;
 
   }
 }
