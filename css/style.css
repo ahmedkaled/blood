@@ -184,8 +184,6 @@ section {
 @media (max-width: 767px) {
   section {
     background-attachment: fixed;
-    width: fit-content;
-    height: fit-content;
     padding-top: 0;
   }
 }

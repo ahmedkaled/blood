@@ -52,6 +52,7 @@ section {
   width: 100%;
   background-color: var(--main-color);
   padding-top: 60px;
+  padding-bottom: 60px;
   /* background-size: cover;
   background-attachment: fixed; */
   
@@ -62,12 +63,18 @@ section {
 .box-big {
   border-radius:15px;
   /* height: 100%; */
-  margin:0 auto;
+  margin: 15px auto;
   background-color: #fffdfd;
   display: flex;
   /* flex-wrap: nowrap; */
   justify-content: center;
   box-shadow: 1px 1px 5px 1px rgb(53, 49, 49);
+}
+@media (max-width:767px) {
+  .box-big {
+    margin: 0;
+    padding: 40px 0;
+  }
 }
 .box-big .box-one {
   position: relative;
