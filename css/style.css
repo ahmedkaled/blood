@@ -466,7 +466,7 @@ section .arow span:nth-child(3) {
   /* display: none; */
   border-radius: 15px;
   width: fit-content;
-  margin: 80px auto;
+  margin: 50px auto;
   margin-bottom: 20px;
   position: relative;
   z-index: 10;
@@ -501,7 +501,7 @@ section .arow span:nth-child(3) {
     flex-direction: column;
   }
   .section-3 .box ul {
-    margin-bottom: 15px;
+    margin: 15px;
     width: 100%;
   }
   .section-3 .box video {
@@ -526,7 +526,12 @@ section .arow span:nth-child(3) {
   line-height: 1.9;
   font-size: 18px;
 }
-
+@media (min-width:992px), (max-width:1199px) {
+  .section-3 .box ul li {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
 .section-3 .box video {
   max-width: 100%;
   width: 100%;
