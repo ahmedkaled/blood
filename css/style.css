@@ -175,7 +175,7 @@ section {
   padding-bottom: 60px;
   background-size: cover;
   background-attachment: fixed;
-  border-bottom: 5px double firebrick;
+  /* border-bottom: 5px double firebrick; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -356,6 +356,8 @@ section .arow span:nth-child(3) {
   padding: 30px 0;
   width: 100%;
   background-color: white;
+  border-top: 5px double darkred;
+  border-bottom: 5px double darkred;
 }
 .section-2 .contanier .ball {
   width: 100px;
@@ -422,12 +424,9 @@ section .arow span:nth-child(3) {
 .section-3 {
   background-color: #8b0000;
   background-size: cover;
-  /* background-image: url(../image/dust_texture.svg); */
   padding-top: 40px;
   padding-bottom: 40px;
-  border-top: 5px double firebrick;
-  /* height: 95vh; */
-  /* border-top: 1px solid white; */
+  /* border-top: 5px double firebrick; */
   position: relative;
 }
 /* .section-3::after {
