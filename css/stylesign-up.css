@@ -51,17 +51,18 @@ section {
   height: 100vh;
   width: 100%;
   background-color: var(--main-color);
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width:666px) {
   section {
-    height: 100%;
     padding-bottom:15px ;
   }
 }
-/* section {
-  height: 100vh;
-} */
+
 .box-big {
   border-radius:15px;
   margin:0 auto;
@@ -281,8 +282,7 @@ form a {
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
-  /* padding-bottom: 20px; */
-  padding: 20px;
+  padding: 20px 0;
 
 }
 .links  button {
@@ -298,11 +298,11 @@ form a {
 
   color: white;
 }
-@media (max-width:666px) {
+/* @media (max-width:666px) {
   .links  button {
 
   }
-}
+} */
 
 
 .links a:hover,
