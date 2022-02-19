@@ -209,6 +209,7 @@ form {
 @media (max-width:767px) {
   form {
     width: 100%;
+    /* padding: 0 10px; */
   }
 }
 form::after {
@@ -240,6 +241,7 @@ form::before {
 }
 
 @media (max-width:767px) {
+  
   form::before {
     display: none;
   }
@@ -248,6 +250,7 @@ form::before {
     top: -60px;
     right: 36%;
     height: 177px;
+    border-radius: 50% 10% 10% 50%;
   }
 }
 form .text h3 {
@@ -266,6 +269,7 @@ form .text::first-letter {
  form .text h3 {
    color: white;
    position: relative;
+   top: -15px;
    z-index: 200;
    padding-top: 0;
    font-size: 18px;
