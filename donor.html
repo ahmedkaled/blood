@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=".//css/stylelogin.css" />
-    <link rel="stylesheet" href="./css/styledonor.css">
+    <!-- <link rel="stylesheet" href=".//css/style.css" /> -->
+    <link rel="stylesheet" href=".//css/styledonor.css" />
     <link rel="stylesheet" href=".//css/normalize.css" />
     <link rel="stylesheet" href=".//css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,16 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>بنك الدم</title>
+    <title>بيانات المحتاج</title>
   </head>
 
   <body dir="rtl">
     <header>
       <div class="contanier">
-        <div class="logo">
-          <img src="./image/Blood-Donation-Background-PNG.png"  alt="" />
-          <p>بنك الدم</p>
-        </div>
+        <div class="logo"><img src="./image/logo.png" alt="" /></div>
         <nav>
           <div class="bar"><i class="fas fa-bars"></i></div>
           <ul>
@@ -31,7 +28,7 @@
               <i class="fas fa-home"></i
               ><a href="index.html">الصفحة الرئيسية</a>
             </li>
-            <li><i class="fas fa-user"></i> <a href="login.html">تسجيل الدخول</a></li>
+            <li><i class="fas fa-user"></i> <a href="#">تسجيل الدخول</a></li>
             <li><i class="fas fa-bell"></i><a href="#">فوائد التبرع</a></li>
             <li>
               <i class="fas fa-info-circle"></i
@@ -42,13 +39,38 @@
       </div>
     </header>
     <section>
-      <!-- <div class="contanier">
-        <form method="post" action="/login.php">
-          
+      <div class="contanier">
+        <form>
+          <div class="text">
+            <h3>ابحث عن متبرع</h3>
+          </div>
+          <div class="list">
+            <label>المحافظة</label>
+            <input list="programming" name="prog" />
+            <datalist id="programming">
+              <option value="الاسكندرية"></option>
+              <option value="القاهرة"></option>
+              <option value="الدقهلية"></option>
+              <option value="الجيزة"></option>
+              <option value="المنوفية"></option>
+            </datalist>
+            <label>الفصيلة</label>
+            <input list="input" name="input" />
+            <datalist id="input">
+              <option value="A+"></option>
+              <option value="A-"></option>
+              <option value="B+"></option>
+              <option value="B-"></option>
+              <option value="O+"></option>
+              <option value="O-"></option>
+              <option value="AB+"></option>
+              <option value="AB-"></option>
+            </datalist>
+          </div>
+          <button type="submit">بحث<i class="fas fa-search"></i></button>
         </form>
-      </div> -->
+      </div>
     </section>
-
     <footer>
       <p>&copy;حقوق الملكية محفوظة "احمد خالد"</p>
       <div class="icon">
