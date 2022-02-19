@@ -245,8 +245,8 @@ form::before {
   form::after {
     transform: rotate(-90deg);
     top: -60px;
-    right: 90px;
-    height: 50%;
+    right: 36%;
+    height: 177px;
   }
 }
 form .text h3 {
