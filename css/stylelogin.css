@@ -91,11 +91,12 @@ section {
     width: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    padding: 0px 25px;
   }
 }
 .box-one::after {
   content: "";
-    transform: rotate(0deg);
+    transform: rotate(5deg);
     position: absolute;
     top: -15px;
     right: 34px;
@@ -105,6 +106,11 @@ section {
     background-color: rgb(194 34 34 / 22%);
     z-index: -5; 
    
+}
+@media (max-width:767px) {
+  .box-one::after {
+    transform: rotate(7deg);
+  }
 }
 .box-big .box-two {
   width: 50%;
@@ -179,7 +185,7 @@ form .text p {
 }
 .this-inputs {
  width: 100%;
- margin: 40px 0;
+ margin: 15px 0;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -217,7 +223,7 @@ form .this-inputs img {
 }
 @media (max-width:767px) {
   .box-big .box-one .this-inputs input {
-    width: 80%;
+    width: 90%;
   }
 }
 .this-inputs .box-rem  {
@@ -243,7 +249,7 @@ form .this-inputs img {
  .this-inputs .box-rem {
  width:60px;
  position: relative;
- right: -35%;
+ right: -33%;
 
   }
 }
@@ -281,14 +287,18 @@ form .links a {
 .links .log button {
   padding: 10px 75px;
   /* margin-right: 15px; */
-  background-color: #dd3b3b;
+  background-color: var(--main-color);
   box-shadow: 0px 0px 5px 0px black;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   cursor: pointer;
   color: white;
 }
-
+@media (max-width:767px) {
+ .links .log button {
+    /* padding: 10px 62px; */
+  }
+}
 .links .create {
   color: black;
   font-size: 10px;
