@@ -276,10 +276,10 @@ form .text span {
 }
 .links {
   display: flex;
-  justify-content: space-around;
-  margin-left: 15px;
+  justify-content: start;
+  /* margin-left: 15px; */
   width: 90%;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   margin-top: 10px;
 }
 @media (max-width: 667px) {
@@ -306,6 +306,13 @@ form .inputs button {
 @media (max-width: 667px) {
   form .links button {
     margin:5 10px ;
+    padding: 10px;
+  }
+ 
+}
+@media (max-width: 991px) {
+  form .links button {
+    /* margin:5 10px ; */
     padding: 10px;
   }
  
