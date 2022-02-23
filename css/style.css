@@ -168,7 +168,7 @@ header nav .bar {
 /* Start Section one */
 section {
   width: 100%;
-  background-image: url(../image/newback.jpg); 
+  background-image: url(../image/newback.webp); 
   background-color: darkred;
   min-height: 100vh;
   padding-top: 60px;

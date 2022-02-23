@@ -151,7 +151,7 @@ header nav .bar {
 /* Start Section */
 section {
   width: 100%;
-  background-image:url(../image/newback.jpg);
+  background-image:url(../image/newback.webp);
   background-color: #700;
   z-index: 2;
   min-height: 100vh;
