@@ -608,7 +608,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  background: rgb(37, 8, 8);
+  background: darkred;
   height: 9vh;
 }
 

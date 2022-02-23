@@ -1,0 +1,14 @@
+table {
+    /* border-collapse: collapse; */
+    width: 50%;
+  
+}
+
+td, th {
+
+    padding: 9px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
