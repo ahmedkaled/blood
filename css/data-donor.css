@@ -357,8 +357,6 @@ form .photo img {
 }
 
 
-/* End Section */
-
 /* Start footer */
 footer {
   width: 100%;
@@ -366,18 +364,34 @@ footer {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  background-color: red;
+  background: darkred;
   height: 9vh;
 }
-
+@media (max-width:667px) {
+  footer  {
+   height: 15vh;
+  }
+}
 footer p {
   font-size: 14px;
   padding: 14px 10px;
   color: white;
 }
+@media (max-width:667px) {
+  footer p {
+    max-width: 73%;
+    line-height: 1.5;
+    padding: 15px;
+  }
+}
 footer .icon {
   display: flex;
   flex-direction: row;
+}
+@media (max-width:767px) {
+  footer .icon {
+   margin: 15px 0;
+  }
 }
 footer .icon i {
   padding: 5px 5px 12px;
