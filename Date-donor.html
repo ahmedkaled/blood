@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 
@@ -38,41 +39,45 @@
     <section>
 
         <div class="contanier">
-            <form>
+            <form method="post" action="../date-donor.php">
                 <div class="text">
-                    <!-- <div class="point"><span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span></div>
-                     -->
                     <h3>تسجيل بيانات المتبرع</h3>
                 </div>
                 <div class="inputs">
                     <label>اسم المتبرع</label>
-                    <input type="text" name="name"  required placeholder="الاسم">
+                    <input type="text" name="name" id="name"  required placeholder="الاسم الرباعي">
                     <Label>رقم الهاتف</Label>
-                    <input type="tel" name="phone" minlength="11"   maxlength="11" required placeholder="رقم هاتف مكون من 11 رقم">
-                    <label>المحافظة</label>
+                    <input type="tel" name="phone" minlength="11" id="phone"   maxlength="11" required placeholder="رقم هاتف مكون من 11 رقم">
+                    <label for="citys">المحافظة</label>
+                    <!-- <input list="name_city" name="name_city" id="city" required placeholder="اختر الان"> -->
+                    <select id="citys"  name="name_city">
+                        <option value="GIZA">  الجيزة </option>
+                        <option value="CIRO"> القاهرة </option>
+                        <option value="Menoufia">  المنوفية</option> 
+                        <option value="Dakahlia">  الدقهلية</option>
+                        </select>
 
-                    <input list="city" name="city" required placeholder="اختر الان">
-                    <datalist id="city">
-                        <option value="الجيزة">
-                        <option value="الاسكندرية">
-                        <option value="الدقهلية">
-                        <option value="القاهرة">
-                    </datalist>
-
-                    <label>فصائل الدم</label>
-                    <input list="blood" name="blood" required placeholder="اختر فصيلة الدم">
-                    <datalist id="blood">
-                        <option value="+A">
-                        <option value="-A">
-                        <option value="+B">
-                        <option value="+O">
-                        <option value="-O">
-                        <option value="+AB">
-                        <option value="-AB">
-                    </datalist>
+                    <label for="blood">فصيلة الدم</label>
+                    <!-- <input list="name_blood" name="name_blood" id="blood" required placeholder="اختر فصيلة الدم"> -->
+                    <select id="blood" name="name_blood">
+                        <option value="+A">فصيلة +A </option>
+                        <option value="-A">فصيلة -A</option>
+                        <option value="+B">فصيلة +B</option>
+                        <option value="+O">فصيلة +O</option>
+                        <option value="-O">فصيلة -O</option>
+                        <option value="+AB">فصيلة +AB</option>
+                        <option value="-AB">فصيلة -AB</option>
+                        </select>
+                    <label for="age">العمر</label>
+                    <input id="age" type="number" name="age"  min="18" max="60" placeholder="اقل سن للتبرع 18 سنه">
+                    <div class="gender">
+                        <p> الجنس :</p>
+                        <label for="male">ذكر</label>
+                        <input id="male" type="radio" name="gender"  value="ذكر">
+                        <label for="fmale">انثي</label>
+                        <input id="fmale" type="radio" name="gender" value="انثي">
+                    </div>
+                   
                     <div class="links">
                         <button type="submit">
                             أضف بياناتك

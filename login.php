@@ -15,7 +15,7 @@ if ($con->connect_error) {
         $data = $stmt_result->fetch_assoc();
         if ($data ['pass'] === $pass){
             echo "<h1 style='text-align:center; color:yellow; margin:250px 0;font-size:85px;background-color:#e9393985;'>تم تسجيل الدخول بنجاح </h1>";
-            echo "<a href='#' style='font-size:30px; display:flex; justify-content:center; color:white;'>الدخول الان للتبرع</a>";
+            echo "<a href='./select.html' style='font-size:30px; display:flex; justify-content:center; color:white;'>الدخول الان </a>";
             echo "<body style='background-size:cover;background-image:url(.//Project/the-medicine-5103043_1920.jpg);'></body>";
 
         } else {
