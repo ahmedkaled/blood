@@ -183,24 +183,53 @@ section .lists ol{
     margin: 10px;
     background-color:white;
     width:40%;
-    padding: 10px;
     color: darkred;
     font-size: 25px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     list-style-position: inside;
     position: relative;
     z-index: 500;
-    box-shadow: 0px 0px 4px 0px black;
+    box-shadow: 0px 0px 5px 0px black;
+    position: relative;
+    
     
 }
+@media (max-width:767px) {
+  section .lists ol {
+   width: 100%;
+   flex-direction: column;
+  }
+}
+section .lists ol::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  border-bottom-left-radius: 8px ;
+  border-bottom-right-radius:8px ;
+  background-color: brown;
+  box-shadow: 0px 0px 4px 0px darkred;
+  
+}
+section .lists ol p {
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 2px solid darkred;
+  padding: 20px;
+  font-weight:bold ;
+}
 
-
-section .lists li{
+section .lists ol li{
     margin: 10px 10px 0 10px;
     color: black;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
     font-size: 18px;
-    line-height: 1.6
+    line-height: 1.7;
     /* text-align: center; */
     /* padding: 8px; */
 }
