@@ -204,7 +204,7 @@ section .lists ol{
   }
 }
 section .lists ol::after {
-  content: "";
+  content: "!";
   position: absolute;
   top: 0px;
   left: 50px;
@@ -213,6 +213,12 @@ section .lists ol::after {
   border-bottom-left-radius: 8px ;
   border-bottom-right-radius:8px ;
   background-color: brown;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
   box-shadow: 0px 0px 4px 0px darkred;
   
 }
