@@ -234,6 +234,7 @@ section .lists ol li{
     margin: 10px 10px 0 10px;
     color: black;
     width: fit-content;
+ 
     padding: 5px;
     border-radius: 10px;
     font-size: 18px;
