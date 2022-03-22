@@ -6,7 +6,7 @@
    // console.log(this.scrollY);
    if (this.scrollY >= 200) {
      div.classList.add("show");
-   } else  {
+   } else    {
      div.classList.remove("show");
    }
  };
