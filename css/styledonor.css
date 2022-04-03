@@ -253,14 +253,12 @@ form::before {
     border-radius: 50% 10% 10% 50%;
   }
 }
-form .text h3 {
-  color: black;
+/* form .text h3 {
+  color: white;
   font-size: 20px;
   text-align: center;
-  /* border-left: 2px solid white;
-  border-bottom: 2px solid white; */
   padding: 13px;
-}
+} */
 form .text::first-letter {
   color: red;
   font-size: 25px;
